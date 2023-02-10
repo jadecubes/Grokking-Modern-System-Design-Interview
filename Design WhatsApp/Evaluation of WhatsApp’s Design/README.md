@@ -58,7 +58,7 @@ Low latency is an essential factor in system design that provides a real-time ex
 
 We might wonder where the trade-off is. Often, communication involves multimedia. Encrypting them in near real-time on the sender device and decrypting on the receiver side can be taxing for the devices, causing latency. The process is illustrated in the following figure:
 
-[End-to-end encryption causes a delay in processing, which has an impact on latency]
+[End-to-end encryption causes a delay in processing, which has an impact on latency](./e.jpg)
 
 
 ## Summary
