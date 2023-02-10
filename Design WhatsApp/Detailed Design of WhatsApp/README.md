@@ -15,7 +15,7 @@ To answer all these questions, let’s dive deep into the high-level design and 
 ### Connection with a WebSocket server
 In WhatsApp, each active device is connected with a WebSocket server via WebSocket protocol. A WebSocket server keeps the connection open with all the active (online) users. Since one server isn’t enough to handle billions of devices, there should be enough servers to handle billions of users. The responsibility of each of these servers is to provide a port to every online user. The mapping between servers, ports, and users is stored in the WebSocket manager that resides on top of a cluster of the data store. In this case, that’s Redis.
 
-[Two users are connected via WebSocket handlers]
+[Two users are connected via WebSocket handlers](./1.jpg)
 
 ```
 Question
@@ -41,7 +41,7 @@ As mentioned earlier, WhatsApp stores messages for a short period. Therefore, we
 - Complex objects
 ```
 
-[WebSocket communicates with message service on top of Mnesia database cluster]
+[WebSocket communicates with message service on top of Mnesia database cluster](./2.jpg)
 
 Now, let’s assume that user A wants to send a message to user B. As shown in the above figure, both users are connected to different WebSocket servers. The system performs the following steps to send messages from user A to user B:
 
@@ -85,7 +85,7 @@ Moreover, the sending of media files consists of the following steps:
 
 The following figure demonstrates the components involved in sharing media files over WhatsApp messenger:
 
-[Sending media files via the asset service]
+[Sending media files via the asset service](./3.jpg)
 
 ### Support for group messages
 WebSocket servers don’t keep track of groups because they only track active users. However, some users could be online and others could be offline in a group. For group messages, the following three main components are responsible for delivering messages to each user in a group:
@@ -106,7 +106,7 @@ Let’s assume that user A wants to send a message to a group with some unique I
 5. In the last step, the group message handler follows the same process as a WebSocket server and delivers the message to each user.
 
 
-[Components responsible for sending group messages]
+[Components responsible for sending group messages](./4.jpg)
 
 ```
 Optional: How encryption and decryption work in WhatsApp
@@ -152,7 +152,7 @@ https://www.whatsapp.com/security/WhatsApp-Security-Whitepaper.pdf
 We discussed the features of our WhatsApp system design. It includes user connection with a server, sending messages and media files, group messages, and end-to-end encryption, individually. The final design of our WhatsApp messenger is as follows:
 
 
-[The detailed WhatsApp design. Interaction of each component with other components is shown with arrows]
+[The detailed WhatsApp design. Interaction of each component with other components is shown with arrows](./5.jpg)
 
 In the next lesson, we’ll evaluate our design and look into the non-functional requirements.
 
