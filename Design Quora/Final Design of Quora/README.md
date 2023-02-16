@@ -85,6 +85,10 @@ Lastly, Memcached can employ multiget() to obtain multiple keys from the cache s
 ```
 Note: Quora has employed AWS to set up a good number of its infrastructure elements, including S3 (see the Blob Storage chapter) and Redshift storage.
 ```
+```
+Redshift is a data warehouse product from Amazon that is based on PostgreSQL. It can handle complex queries, allowing large-scale data transfer. Quora uses Redshift to store view counters.
+```
+
 
 ```
 Question 1
