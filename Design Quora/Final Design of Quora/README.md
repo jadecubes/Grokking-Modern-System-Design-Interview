@@ -78,7 +78,7 @@ Feature extration service: Quora refers to their feature extraction service as A
 
 Features like comments, upvotes, and downvotes require frequent page updates from the client side. Polling is a technique where the client (browser) frequently requests the server for new updates. The server may or may not have any updates but still responds to the client. Therefore, the server may get uselessly overburdened. To resolve this issue, Quora uses a technique called long polling, where if a client requests for an update, the server may not respond for as long as 60 seconds if there are no updates. However, if there is an update, the server will reply immediately and allow the client to make new requests.
 
-[Polling vs. long polling]
+[Polling vs. long polling](./vs.jpg)
 
 Lastly, Memcached can employ multiget() to obtain multiple keys from the cache shards to reduce the retrieval latency of multiple keys.
 
