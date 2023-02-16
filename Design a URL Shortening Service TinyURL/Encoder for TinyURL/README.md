@@ -86,7 +86,7 @@ Note: Both the base-10 numeric IDs and base-64 alphanumeric IDs have 64-bits, as
 
 Let's see the example above with the help of the following illustration.
 
-[How a base-10 number is converted into a base-58 alphanumeric short URL]
+[How a base-10 number is converted into a base-58 alphanumeric short URL](./convert1.jpg)
 
 ## Converting base-58 to base-10
 The decoding process holds equal importance as the encoding process, as we used a decoder in case of custom short URLs generation, as explained in the design lesson.
@@ -122,7 +122,7 @@ This is the same unique ID of base-10 from the previous example.
 
 Let's see the example above with the help of the following illustration.
 
-[How a base-58 number is converted into a base-10 numeric ID]
+[How a base-58 number is converted into a base-10 numeric ID](./convert2.jpg)
 
 ## The scope of the short URL generator
 The short URL generator is the backbone of our URL shortening service. The output of this short URL generator depends on the design-imposed limitations, as given below:
