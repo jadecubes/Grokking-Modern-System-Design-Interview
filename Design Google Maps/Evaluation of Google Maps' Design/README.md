@@ -21,7 +21,7 @@ Lazy loading is postponing the loading or initialization of resources or objects
 ```
 Lazy loading reduces initial load time by reducing the amount of content to load, saves bandwidth by delivering content to users when needed, and preserves server and client resources by rendering only some of the content.
 
-[Non-functional requirements fulfilled by our maps system]
+[Non-functional requirements fulfilled by our maps system](./map.jpg)
 ## Scalability
 We scaled our system for large road networks. Scalability can be seen in two ways:
 
