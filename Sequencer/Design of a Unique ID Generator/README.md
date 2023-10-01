@@ -37,7 +37,7 @@ Using 128-bit numbers as primary keys makes the primary-key indexing slower, whi
                Requirements Filled with UUID
                   Unique      Scalable     Available      64-bit numeric ID
 
-Using UUID        ✖️           ✔️          ✔️           ✖️
+Using UUID        ✖️             ✔️              ✔️                   ✖️
 
 ```
 ## Second solution: using a database
