@@ -232,7 +232,7 @@ We generate our unique ID using TrueTime intervals. Let’s say the earliest int
 
 - Sequence number: This is eight bits. For every ID generated on the server, the sequence number is incremented by one. It gives us 2^{8} = 256 combinations. We’ll reset it to zero when it reaches 256.
 
-[Node B generating a unique ID for its event using TrueTime]
+[Node B generating a unique ID for its event using TrueTime](./TrueTimeGeneration.jpg)
 
 ### Pros
 TrueTime satisfies all the requirements. We’re able to generate a globally unique 64-bit identifier. The causality of events is maintained. The approach is scalable and highly available.
