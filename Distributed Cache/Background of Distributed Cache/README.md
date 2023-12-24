@@ -31,10 +31,10 @@ One of the main reasons caches perform fast is that they’re small. Small cache
 
 Several well-known strategies are used to evict data from the cache. The most well-known strategies include the following:
 
-Least recently used (LRU)
-Most recently used (MRU)
-Least frequently used (LFU)
-Most frequently used (MFU)
+- Least recently used (LRU)
+- Most recently used (MRU)
+- Least frequently used (LFU)
+- Most frequently used (MFU)
 Other strategies like first in, first out (FIFO) also exist. The choice of each of these algorithms depends on the system the cache is being developed for.
 
 Data can be classified into three temperature regions depending on the access frequency:
