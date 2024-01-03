@@ -14,7 +14,7 @@ The load balancing layer is the first point of contact within a data center afte
 
 Here’s an abstract depiction of how load balancers work:
 
-[Simplified working of a load balancer](./lbsymplified.jpg)
+[Simplified working of a load balancer](./lbsimplified.jpg)
 
 ## Placing load balancers
 Generally, LBs sit between clients and servers. Requests go through to servers and back to clients via the load balancing layer. However, that isn’t the only point where load balancers are used.
