@@ -172,7 +172,7 @@ The rationale for the calculation shown above is that we can visualize one secon
 
 **Memory-bound requests**: For memory-bound requests, we use the following formula:
 ```
-RPS memory= RAM size / WORKDER memory x 1 / TASK time
+RPS memory= RAM size / WORKER memory x 1 / TASK time
 where
 RPS memory: Memory bound RPS
 
