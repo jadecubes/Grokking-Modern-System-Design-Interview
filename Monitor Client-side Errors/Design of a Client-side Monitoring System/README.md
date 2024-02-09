@@ -60,6 +60,9 @@ CDN available                     Different/no CDN
 
 Last-mile problems                No readily available fall-back for the service
 
+```
+
+
 
 ## Protect user privacy
 The human user who uses the client-side software should be in full control to precisely know what data is collected and sent with each request. The user should also be able to reactivate the feature any time they wish. If we use our client-side application (and not a browser application), we have a lot of flexibility in what diagnostic could be included in the report. For a browser-based client, we can avoid the following information:
