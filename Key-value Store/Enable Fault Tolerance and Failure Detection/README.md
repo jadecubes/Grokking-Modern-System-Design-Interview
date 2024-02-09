@@ -30,7 +30,7 @@ In a Merkle tree, the values of individual keys are hashed and used as the leave
 
 The following slides explain how Merkle trees work:
 
-[Merkle tree](./markle)
+[Merkle tree](./merkle)
 
 ### Anti-entropy with Merkle trees
 Each node keeps a distinct Merkle tree for the range of keys that it hosts for each virtual node. The nodes can determine if the keys in a given range are correct. The root of the Merkle tree corresponding to the common key ranges is exchanged between two nodes. We’ll make the following comparison:
